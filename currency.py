@@ -9,11 +9,12 @@ import asyncio
 
 
 def pretty_view(data: list[dict]):
+    sorted_data = sorted(data, key=lambda x:list(x.keys())[0])
     pattern = "|{:^10}|{:^10}|{:^10}|"    
     print(34 * "-")
     print(pattern.format("currency", "sale", "buy"))
     print(34 * "-")
-    for el in data:
+    for el in sorted_data:
         currency, *_ = el.keys()
         buy = el.get(currency).get("buy")
         sale = el.get(currency).get("sale")

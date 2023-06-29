@@ -59,7 +59,7 @@ class Server:
                     ):
                     days = int(args_currency[1])
                     if days > 10:
-                        logger.info(f'second argumrnt in *{message}* must be less 10')
+                        logging.info(f'second argumrnt in *{message}* must be less 10')
                         days = 1
                 else:
                     logging.info(f'current exchange rate for today')
