@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "goit-web-hw5"
+version = "0.1.0"
+description = "api_privat"
+authors = ["OlehVakulchyk <4020405@gmail.com>"]
+readme = "README.md"
+packages = [{include = "goit_web_hw5"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.8.4"
+websockets = "^11.0.3"
+names = "^0.3.0"
+aiofile = "^3.8.7"
+aiopath = "^0.6.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
